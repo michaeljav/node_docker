@@ -1,0 +1,11 @@
+node_modules
+
+browsing_history
+.env
+
+
+.dockerignore
+Dockerfile
+README.md
+.devcontainer
+docker-compose.yml
