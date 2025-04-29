@@ -1,11 +1,20 @@
-
 services:
   backend:
     build: .
+    command: nodemon src/index.js
+    develop:
+      watch:
+        - action: sync
+          path: ./src
+          target: /app/src
+          ignore:
+            - node_modules/
+        - action: rebuild
+          path: ./package.json
     ports:
-      - '9000:9000'   
+      - "9000:9000"
     environment:
-      - NODE_ENV=development   
+      - NODE_ENV=development
 
   db:
     image: postgres:latest
@@ -18,4 +27,3 @@ services:
 
 volumes:
   postgres_data:
-

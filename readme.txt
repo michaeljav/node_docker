@@ -1,4 +1,11 @@
 
+
+TO RUN THIS AND HOT RELOAD:
+docker compose up --watch --build
+
+
+
+
 1.project setup
 mkdir my-express-app
 cd my-express-app
