@@ -3,6 +3,20 @@
 TO RUN THIS AND HOT RELOAD:
 docker compose up --watch --build
 
+docker-compose down --volumes
+docker-compose down --volumes
+docker system prune -af
+docker-compose up --build
+
+
+docker compose down --rmi all
+docker compose up --build
+
+
+
+json : "dev": "nodemon --legacy-watch --watch . --ext js,json --exec \"node src/index.js\""
+
+
 Source
 https://www.youtube.com/watch?v=r_LIibh0uzc
 
