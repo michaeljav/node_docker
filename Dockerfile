@@ -12,7 +12,8 @@ COPY package*.json  ./
 #This run keyword  happens when we're building image but the CMD keyword
 #is what docker uses to actual start  the container
 # Install nodemon globally for development
-RUN npm install -g nodemon && npm install
+# RUN npm install -g nodemon && npm install
+RUN npm install
 # RUN npm install --include=dev
 
 #Copy the rest of our app into the container

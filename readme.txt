@@ -3,6 +3,10 @@
 TO RUN THIS AND HOT RELOAD:
 docker compose up --watch --build
 
+Source
+https://www.youtube.com/watch?v=r_LIibh0uzc
+
+
 
 
 
